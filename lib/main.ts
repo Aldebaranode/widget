@@ -8,10 +8,10 @@ import ConnectWallet from './components/ConnectWallet/index.vue';
 import TokenConvert from './components/TokenConvert/index.vue';
 
 function registry(name: string, module: any) {
-    if (!window.customElements.get(name)) {
-        const component = wrapper(module, createApp, h);
-        window.customElements.define(name, component);
-    }
+  if (!window.customElements.get(name)) {
+    const component = wrapper(module, createApp, h);
+    window.customElements.define(name, component);
+  }
 }
 
 registry('ping-tx-dialog', TxDialog)
@@ -19,5 +19,5 @@ registry('ping-connect-wallet', ConnectWallet)
 registry('ping-token-convert', TokenConvert)
 
 export default {
-    version: '0.0.5',
+  version: '0.0.5',
 };

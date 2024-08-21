@@ -41,17 +41,17 @@ export interface TxResponse {
   raw_log: string,
 }
 
-export interface Transaction { 
-  chainId: string; 
-  signerAddress: string; 
-  messages: readonly EncodeObject[]; 
-  fee: StdFee; 
-  memo: string; 
-  signerData: SignerData 
+export interface Transaction {
+  chainId: string;
+  signerAddress: string;
+  messages: readonly EncodeObject[];
+  fee: StdFee;
+  memo: string;
+  signerData: SignerData
 }
 
 export enum BroadcastMode {
-  SYNC = 'BROADCAST_MODE_SYNC', 
-  BLOCK = 'BROADCAST_MODE_BLOCK', 
+  SYNC = 'BROADCAST_MODE_SYNC',
+  BLOCK = 'BROADCAST_MODE_BLOCK',
   ASYNC = 'BROADCAST_MODE_ASYNC',
 }

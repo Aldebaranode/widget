@@ -52,11 +52,11 @@ export class UnisatWallet implements AbstractWallet {
     const pbk = await window.unisat.getPublicKey();
 
     return [
-        {
-            address: accounts[0],
-            pubkey: fromHex(pbk),
-            algo: "segwit",
-        },
+      {
+        address: accounts[0],
+        pubkey: fromHex(pbk),
+        algo: "segwit",
+      },
     ];
   }
   supportCoinType(): Promise<boolean> {
